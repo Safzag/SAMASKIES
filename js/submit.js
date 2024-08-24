@@ -2,7 +2,7 @@ $("body > div.footer > div.footer-content > div.footer-section.contact-form > fo
     var isValid = true; // Reset the validation flag before checking
 
     // Loop through each required input field
-    $(".Safae").each(function() {
+    $("form input[required]").each(function() {
         if ($(this).val() === "") {
             isValid = false;
             $(this).css("border-color", "red"); // Highlight the empty field
